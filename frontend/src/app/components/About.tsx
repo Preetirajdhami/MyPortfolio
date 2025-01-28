@@ -17,7 +17,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4 text-textColor ">About Me</h2>
           <p className="text-lg text-textColor mb-6">
-            Greetings! I'm Preeti Rajdhami a dedicated <span className="font-bold ">software developer</span>  located in Nepal! With expertise in TypeScript, JavaScript, Node.js, React.js, and Next.js, I specialize in crafting seamless, dynamic, and scalable solutions across both frontend and backend development. Whether building intuitive user interfaces or designing robust server-side architectures, I excel at bringing ideas to life through code."</p>
+            Greetings! I&apos;m Preeti Rajdhami a dedicated <span className="font-bold ">software developer</span>  located in Nepal! With expertise in TypeScript, JavaScript, Node.js, React.js, and Next.js, I specialize in crafting seamless, dynamic, and scalable solutions across both frontend and backend development. Whether building intuitive user interfaces or designing robust server-side architectures, I excel at bringing ideas to life through code.</p>
           <p className="text-lg text-textColor mb-6">
           I also work with C++ and Java, focusing on solving complex challenges in data structures and algorithms. Problem-solving is at the core of my work, and I enjoy finding efficient, elegant solutions to every task.
           </p>

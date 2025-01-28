@@ -38,7 +38,7 @@ const Contact = () => {
     <section id="contact" className=" mx-auto pb-12  ">
       <div className="bg-bgTheme px-8 lg:px-16 xl:px-24 2xl:px-44">
       <h2 className="text-4xl font-bold text-center text-textColor mb-6">Contact </h2>
-      <h3 className="text-2xl font-semibold text-center text-textColor mb-4">Let's Work Together</h3>
+      <h3 className="text-2xl font-semibold text-center text-textColor mb-4">Let&apos;s Work Together</h3>
       <div className="flex flex-wrap lg:flex-nowrap  gap-8">
         
         {/* Contact Form */}

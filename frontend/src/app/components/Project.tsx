@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 const ProjectSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -77,11 +78,15 @@ const ProjectSection = () => {
               <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                 {/* Image */}
                 <div className="rounded-lg">
-                  <img
+
+                  <Image
                     src={project.image}
                     alt={project.title}
-                    className="w-full p-5 h-52 transition-transform duration-300 ease-in-out hover:scale-105  object-cover"
-                  /> </div>
+                    width={500} 
+                    height={208} 
+                    className="w-full p-5 h-52 transition-transform duration-300 ease-in-out hover:scale-105 object-cover"
+                  />
+                </div>
                 {/* Content */}
                 <div className="pb-4 px-4">
                   <h3 className="text-xl font-semibold text-textColor mb-2">{project.title}</h3>
@@ -125,8 +130,8 @@ const ProjectSection = () => {
         <button
           onClick={slideNext}
           className={`px-4 py-2 bg-DarkButton text-white rounded-lg shadow ${currentIndex >= projects.length - 3
-              ? "opacity-50 cursor-not-allowed"
-              : "hover:bg-opacity-80"
+            ? "opacity-50 cursor-not-allowed"
+            : "hover:bg-opacity-80"
             }`}
           disabled={currentIndex >= projects.length - 3}
         >

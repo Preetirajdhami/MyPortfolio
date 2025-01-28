@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -11,10 +12,10 @@ const Hero = () => {
     >
       <div className="w-full px-4 md:w-1/2 text-left md:px-12">
         <h1 className="text-4xl font-display md:text-6xl font-semibold text-textColor mb-4">
-          Hi, I'm <span className="text-DarkButton font-bold">Preeti</span>
+          Hi, I&apos;m <span className="text-DarkButton font-bold">Preeti</span>
         </h1>
         <p className="text-xl text-textColor mb-6">
-          I'm a <span className="font-bold">versatile and creative Developer</span>, creating seamless frontend and backend solutions for high-performance web applications.
+          I&apos;m a <span className="font-bold">versatile and creative Developer</span>, creating seamless frontend and backend solutions for high-performance web applications.
         </p>
         <div className="inline-flex w-auto flex-col sm:flex-row gap-4">
           <a
@@ -33,12 +34,14 @@ const Hero = () => {
       </div>
 
       <div className="flex w-full md:w-1/2 justify-center items-center sm:justify-end mb-8 sm:mb-0">
-        <img
-          src="/images/preeti.png"
-          alt="Preeti Rajdhami"
-          className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg relative"
-        />
-      </div>
+      <Image
+        src="/images/preeti.png"
+        alt="Preeti Rajdhami"
+        width={256} 
+        height={256} 
+        className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg relative"
+      />
+    </div>
     </div>
   );
 };
