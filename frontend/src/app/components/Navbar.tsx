@@ -50,28 +50,28 @@ const Navbar = () => {
             <Link
               href="/"
               className={`${currentPath === '/' ? 'text-ButtonC' : 'text-textColor'
-                } font-bold hover:text-popBlue block py-2 px-4 md:py-0 md:px-0`}
+                } font-bold  block py-2 px-4 md:py-0 md:px-0`}
             >
               HOME
             </Link>
             <Link
               href="#about"
               className={`${currentPath === '#about' ? 'text-ButtonC' : 'text-textColor'
-                } font-bold hover:text-popBlue block py-2 px-4 md:py-0 md:px-0`}
+                } font-bold  block py-2 px-4 md:py-0 md:px-0`}
             >
               ABOUT
             </Link>
             <Link
               href="#project"
               className={`${currentPath === '#project' ? 'text-ButtonC' : 'text-textColor'
-                } font-bold hover:text-popBlue block py-2 px-4 md:py-0 md:px-0`}
+                } font-bold  block py-2 px-4 md:py-0 md:px-0`}
             >
               PROJECTS
             </Link>
             <Link
               href="#contact"
               className={`${currentPath === '#contact' ? 'text-ButtonC' : 'text-textColor'
-                } font-bold hover:text-popBlue block py-2 px-4 md:py-0 md:px-0`}
+                } font-bold  block py-2 px-4 md:py-0 md:px-0`}
             >
               CONTACT
             </Link>

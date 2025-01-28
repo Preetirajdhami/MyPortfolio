@@ -21,7 +21,7 @@ const ProjectSection = () => {
       title: "BlueFoxHoster",
       image: "/images/BluefoxhosterImg.png",
       sourceCode: "https://github.com/Preetirajdhami/bluefoxHoster",
-      liveDemo: "https://bluefoxhoster.vercel.app/",
+      liveDemo: "https://quickvote-beta.vercel.app/",
     },
     {
       id: 3,

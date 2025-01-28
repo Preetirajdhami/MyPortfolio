@@ -121,7 +121,7 @@ const Contact = () => {
             <h1 className="text-3xl text-textColor mt-6 font-semibold flex flex-row justify-end">Address</h1>
             <div className="flex items-center text-gray-700">
             <FaMapMarkerAlt className="text-DarkButton mr-3" />
-              <span className="text-xl font-bold text-DarkButton">Kathmandu, Nepal</span>
+              <span className="text-xl font-bold text-DarkButton">Itahari, Nepal</span>
             </div>
           </div>
           <h3 className="text-3xl text-textColor font-semibold mt-6 mb-4 flex flex-row justify-end">Socials</h3>
