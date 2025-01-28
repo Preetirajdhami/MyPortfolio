@@ -25,7 +25,7 @@ const Hero = () => {
             View Projects
           </a>
           <a
-            href="resume"
+            href="https://drive.google.com/file/d/1VEc8KoOv9L2RmNDOMYJE0CwJ-Vimzy8V/view"
             className="flex items-center justify-center text-lg border-2 border-DarkButton py-2 px-6 text-DarkButton font-bold rounded-lg hover:bg-ButtonC hover:text-white transition duration-300"
           >
             Resume
