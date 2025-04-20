@@ -56,12 +56,12 @@ const About = () => {
 
             <div className="flex flex-col items-center shadow-ButtonC shadow-md px-5 py-2 rounded-md">
               <MongodbIcon className="text-4xl text-blue-500 mb-2" />
-              <span className="text-lg text-slate-700">React.js</span>
+              <span className="text-lg text-slate-700">Mongodb</span>
             </div>
 
             <div className="flex flex-col items-center shadow-ButtonC shadow-md px-5 py-2 rounded-md">
               <RIcon Name="text-4xl text-purple-600 mb-2" />
-              <span className="text-lg text-slate-700">Next.js</span>
+              <span className="text-lg text-slate-700">React.js</span>
             </div>
 
             <div className="flex flex-col items-center shadow-ButtonC shadow-md px-5 py-2 rounded-md">
@@ -71,7 +71,7 @@ const About = () => {
 
             <div className="flex flex-col items-centerv shadow-ButtonC shadow-md px-5 py-2 rounded-md">
               <NextjsIcon className="text-4xl text-blue-500 mb-2" />
-              <span className="text-lg text-slate-700">React.js</span>
+              <span className="text-lg text-slate-700">Next.js</span>
             </div>
 
             <div className="flex flex-col items-center shadow-ButtonC shadow-md px-7 py-2 rounded-md">
@@ -81,7 +81,7 @@ const About = () => {
 
             <div className="flex flex-col items-center shadow-ButtonC shadow-md px-5 py-2 rounded-md">
               <PostmanIcon className="text-4xl text-purple-600 mb-2" />
-              <span className="text-lg text-slate-700">Next.js</span>
+              <span className="text-lg text-slate-700">Postman</span>
             </div>
           </div>
 
