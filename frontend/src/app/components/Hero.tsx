@@ -11,10 +11,10 @@ const Hero = () => {
       }}
     >
       
-      <div className="absolute top-0 left-0 w-full h-full">
+      {/* <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-200 rounded-full opacity-20 animate-pulse delay-700"></div>
-      </div>
+      </div> */}
 
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 z-10">
         <div className="w-full lg:w-1/2 text-center lg:text-left">
