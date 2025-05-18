@@ -11,11 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        bgTheme:'#e8efff',
-        textColor:'#002147',
-        ButtonC: '#7091E6',
-        DarkButton: '#3D52A0',
-        Form: '#8697C4'
+        primary: "#f4a261",
+        base:'#fdf6ec',
+        textColor:'#2d2d2d ',
+       
 
         
       },

@@ -4,6 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const ProjectSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,6 +47,28 @@ const ProjectSection = () => {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { x: -50, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 15,
+      },
+    },
+  };
 
   const slideNext = () => {
     if (currentIndex < projects.length - 3) {
@@ -61,9 +84,20 @@ const ProjectSection = () => {
 
   return (
     <div id="project" className="py-16 px-8 xl:px-40 bg-bgTheme">
-      <h2 className="text-4xl font-bold text-center text-textColor mb-8">My Projects</h2>
-      <div className="relative overflow-hidden">
-
+      <motion.h2
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        className="text-4xl font-bold text-center text-primary mb-8"
+      >
+        My Projects
+      </motion.h2>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="relative overflow-hidden"
+      >
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
@@ -71,31 +105,31 @@ const ProjectSection = () => {
           }}
         >
           {projects.map((project) => (
-            <div
+            <motion.div
               key={project.id}
+              variants={itemVariants}
               className="min-w-full md:min-w-[33.33%] 2xl:min-w-[25%] p-4"
             >
               <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                {/* Image */}
                 <div className="rounded-lg">
-
                   <Image
                     src={project.image}
                     alt={project.title}
-                    width={500} 
-                    height={208} 
+                    width={500}
+                    height={208}
                     className="w-full p-5 h-52 transition-transform duration-300 ease-in-out hover:scale-105 object-cover"
                   />
                 </div>
-                {/* Content */}
-                <div className="pb-4 px-4">
-                  <h3 className="text-xl font-semibold text-textColor mb-2">{project.title}</h3>
+                <motion.div variants={itemVariants} className="pb-4 px-4">
+                  <h3 className="text-xl font-semibold text-textColor mb-2">
+                    {project.title}
+                  </h3>
                   <div className="flex flex-row gap-2">
                     <a
                       href={project.sourceCode}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex mt-2 w-auto gap-1 bg-DarkButton text-white px-2 py-2 rounded-md hover:bg-ButtonC transition-colors duration-200"
+                      className="inline-flex mt-2 w-auto gap-1 bg-primary text-white px-2 py-2 rounded-md hover:bg-ButtonC transition-colors duration-200"
                     >
                       <FaGithub className="text-xl" />
                       <span>Source Code</span>
@@ -104,35 +138,38 @@ const ProjectSection = () => {
                       href={project.liveDemo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex mt-2 w-auto gap-2 bg-DarkButton text-white px-4 py-2 rounded-md hover:bg-ButtonC transition-colors duration-200"
+                      className="inline-flex mt-2 w-auto gap-2 bg-primary text-white px-4 py-2 rounded-md hover:bg-ButtonC transition-colors duration-200"
                     >
                       <span>Visit Website</span>
                     </a>
                   </div>
-                </div>
-
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* Navigation Buttons */}
       <div className="flex justify-between mt-4">
         <button
           onClick={slidePrev}
-          className={`px-4 py-2 bg-DarkButton text-white rounded-lg shadow ${currentIndex === 0 ? "opacity-50 cursor-not-allowed" : "hover:bg-opacity-80"
-            }`}
+          className={`px-4 py-2 bg-primary text-white rounded-lg shadow ${
+            currentIndex === 0
+              ? "opacity-50 cursor-not-allowed"
+              : "hover:bg-opacity-80"
+          }`}
           disabled={currentIndex === 0}
         >
           <FaChevronLeft />
         </button>
         <button
           onClick={slideNext}
-          className={`px-4 py-2 bg-DarkButton text-white rounded-lg shadow ${currentIndex >= projects.length - 3
-            ? "opacity-50 cursor-not-allowed"
-            : "hover:bg-opacity-80"
-            }`}
+          className={`px-4 py-2 bg-primary text-white rounded-lg shadow ${
+            currentIndex >= projects.length - 3
+              ? "opacity-50 cursor-not-allowed"
+              : "hover:bg-opacity-80"
+          }`}
           disabled={currentIndex >= projects.length - 3}
         >
           <FaChevronRight />
