@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
@@ -83,20 +84,24 @@ const ProjectSection = () => {
   };
 
   return (
-    <div id="project" className="py-16 px-8 xl:px-40 bg-bgTheme">
+    <div id="project" className="relative py-16 px-8 xl:px-40 bg-bgTheme overflow-hidden">
+      {/* Top-left blurred circle */}
+      <div className=" hidden md:block absolute -left-0 -top-24 w-72 h-72 bg-primary rounded-full blur-[150px] opacity-40 z-0" />
+
       <motion.h2
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-center text-primary mb-8"
+        className="text-4xl font-bold text-center text-primary mb-8 relative z-10"
       >
         My Projects
       </motion.h2>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="relative overflow-hidden"
+        className="relative overflow-hidden z-10"
       >
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -151,7 +156,7 @@ const ProjectSection = () => {
       </motion.div>
 
       {/* Navigation Buttons */}
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between mt-4 z-10 relative">
         <button
           onClick={slidePrev}
           className={`px-4 py-2 bg-primary text-white rounded-lg shadow ${

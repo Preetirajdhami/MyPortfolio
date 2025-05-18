@@ -1,20 +1,20 @@
-
 import Image from "next/image";
 
 const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-8 lg:px-16 xl:px-36 2xl:px-56 relative overflow-hidden">
-      {/* <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-200 rounded-full opacity-20 animate-pulse delay-700"></div>
-      </div> */}
+      {/* Top-Left Blurred Circle */}
+      <div className=" hidden md:block absolute  -left-1 top-1/3 -translate-y-1/2 w-96 h-96 bg-primary rounded-full blur-[150px] opacity-40 z-0" />
 
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 z-10">
+      {/* Bottom-Right Blurred Circle */}
+      <div className=" hidden md:block absolute right-0 top-[80%] w-72 h-72 bg-primary rounded-full blur-[150px] opacity-40 z-0" />
+
+      <div className="mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 z-10">
+        {/* Left Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <div className="animate-fadeIn space-y-6">
             <h1 className="text-4xl font-display md:text-6xl font-bold text-textColor mb-4 leading-tight">
-              Hi, I&apos;m{" "}
-              <span className="text-primary font-bold ">Preeti</span>
+              Hi, I&apos;m <span className="text-primary font-bold">Preeti</span>
             </h1>
             <p className="text-xl text-textColor mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               I&apos;m a <span className="font-bold">Full-Stack Developer</span>{" "}
@@ -46,7 +46,9 @@ const Hero = () => {
               </a>
               <a
                 href="https://drive.google.com/file/d/1_TyPzoeiQBYT-XwJmiPvPjC0B7D8tFiM/view?usp=sharing"
-                className="flex items-center justify-center text-lg border-2 border-primary py-3 px-8 text-textColor font-bold rounded-lg  transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1 gap-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center text-lg border-2 border-primary py-3 px-8 text-textColor font-bold rounded-lg transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1 gap-2"
               >
                 <span>Resume</span>
                 <svg
@@ -67,9 +69,10 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 flex justify-center items-center">
-          <div className="relative">
-            <div className="absolute -inset-4  rounded-full opacity-75 blur-lg animate-pulse"></div>
+        {/* Right Image */}
+        <div className="w-full lg:w-1/2 flex justify-center items-center relative">
+          <div className="relative z-10">
+            <div className="absolute -inset-4 rounded-full opacity-75 blur-lg animate-pulse" />
             <Image
               src="/images/preeti.jpg"
               alt="Preeti Rajdhami"

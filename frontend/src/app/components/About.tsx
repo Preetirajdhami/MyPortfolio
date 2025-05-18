@@ -10,9 +10,15 @@ import RIcon from "./React";
 
 const About = () => {
   return (
-    <div id="about">
+    <div id="about" className="relative overflow-hidden">
+      {/* Blurred Circle on Top Right Corner */}
+      <div className="hidden md:block absolute -right-0 -top-24 w-72 h-72 bg-primary rounded-full blur-[150px] opacity-40 z-0" />
+
+
+       <div className="hidden md:block absolute -left-20 bottom-0 w-80 h-80 bg-primary rounded-full blur-[150px] opacity-40 z-0" />
+
       {/* About Section */}
-      <section className="py-2 px-8 bg-bgTheme ">
+      <section className="py-2 px-8 bg-bgTheme relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4 text-primary ">About Me</h2>
           <p className="text-lg text-textColor mb-6">
@@ -35,7 +41,7 @@ const About = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-2 px-8 bg-bgTheme">
+      <section className="py-2 px-8  relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-primary">
             Tools and Technology
@@ -82,7 +88,7 @@ const About = () => {
               <span className="text-lg text-slate-700">Node.js</span>
             </div>
 
-            <div className="flex flex-col items-centerv shadow-ButtonC shadow-md px-5 py-2 rounded-md">
+            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-5 py-2 rounded-md">
               <NextjsIcon className="text-4xl text-blue-500 mb-2" />
               <span className="text-lg text-slate-700">Next.js</span>
             </div>
