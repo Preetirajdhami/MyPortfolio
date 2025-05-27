@@ -40,7 +40,7 @@ const ProjectSection = () => {
       id: 4,
       title: "Project 4",
       image: "/images/project4.jpg",
-      sourceCode: "https://github.com/Preetirajdhami/project4",
+      sourceCode: "https://gridify-henna.vercel.app",
       liveDemo: "https://project4.demo",
       description: "Description of project 4",
     },
