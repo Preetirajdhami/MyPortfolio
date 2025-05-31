@@ -4,6 +4,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Navbar from "../components/Navbar";
 
 const ProjectsPage = () => {
   const projects = [
@@ -73,7 +74,10 @@ const ProjectsPage = () => {
   };
 
   return (
-    <div className="py-16 px-8 xl:px-40 bg-bgTheme">
+   <div>
+    <Navbar />
+     <div className="py-16 px-8 xl:px-40 bg-base">
+      
       <motion.h2
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -133,6 +137,7 @@ const ProjectsPage = () => {
         ))}
       </motion.div>
     </div>
+   </div>
   );
 };
 
