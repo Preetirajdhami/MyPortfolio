@@ -52,67 +52,67 @@ const About = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-            {/* Tool Card */}
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <HtmlIcon className="text-3xl sm:text-4xl p-3 text-slate-100 mb-2" />
-              <span className="text-sm sm:text-base text-slate-700">Html</span>
+            {/* Tool Cards */}
+            <div className="flex flex-col items-center shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <HtmlIcon className="text-3xl sm:text-4xl p-3  mb-2" />
+              <span className="text-sm  text-textColor">Html</span>
             </div>
 
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <CIcon className="text-3xl sm:text-4xl text-blue-500 mb-2" />
-              <span className="text-sm sm:text-base text-slate-700">C++</span>
+            <div className="flex flex-col items-center  shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <CIcon className="text-3xl sm:text-4xl text-textColor mb-2" />
+              <span className="text-sm  text-textColor">C++</span>
             </div>
 
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <FaJs className="text-4xl sm:text-5xl text-yellow-500 mb-1" />
-              <span className="text-sm sm:text-base text-slate-700">
+            <div className="flex flex-col items-center  shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <FaJs className="text-4xl sm:text-5xl text-textColor mb-1" />
+              <span className="text-sm text-textColor">
                 JavaScript
               </span>
             </div>
 
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <TailwindIcon className="text-3xl sm:text-4xl text-blue-500 mb-2" />
-              <span className="text-sm sm:text-base text-slate-700">
+            <div className="flex flex-col items-center  shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <TailwindIcon className="text-3xl sm:text-4xl text-textColor mb-2" />
+              <span className="text-sm  text-slate-700">
                 Tailwind
               </span>
             </div>
 
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <MongodbIcon className="text-3xl sm:text-4xl text-blue-500 mb-2" />
-              <span className="text-sm sm:text-base text-slate-700">
+            <div className="flex flex-col items-center  shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <MongodbIcon className="text-3xl sm:text-4xl text-textColor mb-2" />
+              <span className="text-sm  text-slate-700">
                 MongoDB
               </span>
             </div>
 
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <RIcon className="text-3xl sm:text-4xl text-purple-600 mb-2" />
-              <span className="text-sm sm:text-base text-slate-700">
+            <div className="flex flex-col items-center  shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <RIcon className="text-3xl sm:text-4xl text-textColor mb-2" />
+              <span className="text-sm  text-slate-700">
                 React.js
               </span>
             </div>
 
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <FaNodeJs className="text-3xl sm:text-4xl text-green-500 mb-2" />
-              <span className="text-sm sm:text-base text-slate-700">
+            <div className="flex flex-col items-center  shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <FaNodeJs className="text-3xl sm:text-4xl text-textColor mb-2" />
+              <span className="text-sm text-slate-700">
                 Node.js
               </span>
             </div>
 
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <NextjsIcon className="text-3xl sm:text-4xl text-blue-500 mb-2" />
-              <span className="text-sm sm:text-base text-slate-700">
+            <div className="flex flex-col items-center  shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <NextjsIcon className="text-3xl sm:text-4xl text-textColor mb-2" />
+              <span className="text-sm  text-slate-700">
                 Next.js
               </span>
             </div>
 
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <FaGitAlt className="text-3xl sm:text-4xl text-orange-600 mb-2" />
-              <span className="text-sm sm:text-base text-slate-700">Git</span>
+            <div className="flex flex-col items-center shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <FaGitAlt className="text-3xl sm:text-4xl text-textColor mb-2" />
+              <span className="text-sm  text-slate-700">Git</span>
             </div>
 
-            <div className="flex flex-col items-center shadow-ButtonC shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
-              <PostmanIcon className="text-3xl sm:text-4xl text-purple-600 mb-2" />
-              <span className="text-sm sm:text-base text-slate-700">
+            <div className="flex flex-col items-center  shadow-md px-4 py-3 rounded-md w-[100px] sm:w-[120px]">
+              <PostmanIcon className="text-3xl sm:text-4xl text-textColor mb-2" />
+              <span className="text-sm  text-slate-700">
                 Postman
               </span>
             </div>
