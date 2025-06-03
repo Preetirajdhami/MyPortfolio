@@ -31,10 +31,7 @@ const About = () => {
             code.
           </p>
           <p className="text-lg text-textColor mb-6">
-            I also work with C++ and Java, focusing on solving complex
-            challenges in data structures and algorithms. Problem-solving is at
-            the core of my work, and I enjoy finding efficient, elegant
-            solutions to every task.
+            I also work with C++ and ASP.NET, focusing on solving complex challenges in data structures and algorithms. Problem-solving is at the core of my work, and I enjoy finding efficient, elegant solutions to every task.
           </p>
         </div>
       </section>
