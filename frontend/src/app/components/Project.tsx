@@ -34,7 +34,7 @@ const ProjectSection = () => {
       image: "/images/preetiarts.png",
       sourceCode: "https://github.com/Preetirajdhami/artPortfolio",
       liveDemo: "https://project3.demo",
-      description: "Description of project 3",
+      description: "Art Portfolio showcasing various artworks and projects",
     },
     {
       id: 4,
