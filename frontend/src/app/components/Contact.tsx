@@ -137,7 +137,7 @@ const Contact = () => {
           </form>
 
           {/* Contact Info Section */}
-          <div className="flex-1 flex flex-col items-end bg-base shadow-lg rounded-2xl p-8 text-right space-y-8">
+          <div className="flex-1 flex flex-col items-end bg-white shadow-lg rounded-2xl p-8 text-right space-y-8">
             {/* Email */}
             <div>
               <h2 className="text-sm text-primary uppercase font-bold tracking-widest mb-2">
