@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-8 lg:px-16 xl:px-36 2xl:px-56 relative overflow-hidden">
+    <div className="flex flex-col items-center justify-center min-h-screen responsive-padding relative overflow-hidden">
       {/* Top-Left Blurred Circle */}
       <div className=" hidden md:block absolute  -left-1 top-1/3 -translate-y-1/2 w-96 h-96 bg-primary rounded-full blur-[150px] opacity-40 z-0" />
 

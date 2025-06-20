@@ -5,3 +5,16 @@
 html {
     scroll-behavior: smooth;
   }
+
+@layer utilities {
+  .responsive-padding{
+    /* stylelint-disable-next-line at-rule-no-unknown */
+    @apply px-8 sm:px-12 md:px-16 lg:px-20 xl:px-60;
+  }
+}
+
+@layer utilities {
+  .responsive-text {
+    @apply text-xl lg:text-3xl xl:text-4xl;
+  }
+}

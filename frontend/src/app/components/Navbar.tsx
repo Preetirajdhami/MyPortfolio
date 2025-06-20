@@ -34,7 +34,7 @@ const Navbar = () => {
       )}
 
       <header className="sticky top-0 z-50 h-20 bg-base shadow-lg">
-        <div className="lg:px-32 sm:px-7 md:px-8 mx-auto flex items-center justify-between py-4 px-4 relative">
+        <div className="responsive-padding mx-auto flex items-center justify-between py-5  relative">
           {/* Hamburger Button */}
           <div className="md:hidden flex-shrink-0 text-textColor">
             <button onClick={toggleDropdown} className="focus:outline-none">
@@ -46,9 +46,9 @@ const Navbar = () => {
           <div className="flex flex-1 text-center items-center justify-center md:justify-between w-full md:w-auto md:mx-0 mx-auto">
             <Link
               href="/"
-              className="text-2xl font-bold flex items-center space-x-2"
+              className=" responsive-text font-bold flex items-center space-x-2"
             >
-              <h2 className="font-semibold text-textColor">PREETI RAJDHAMI</h2>
+              <h2 className="font-semibold tetx-base text-textColor">PREETI RAJDHAMI</h2>
             </Link>
           </div>
 
@@ -74,7 +74,7 @@ const Navbar = () => {
             </div>
 
             {/* Links */}
-            <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-8">
+            <div className=" text-lg xl:text-xl  flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-8">
               <Link
                 href="/"
                 onClick={closeMenu}
