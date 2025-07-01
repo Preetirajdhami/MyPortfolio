@@ -30,7 +30,7 @@ const ProjectSection = () => {
     },
     {
       id: 3,
-      title: "Project 3",
+      title: "Preeti Arts",
       image: "/images/preetiarts.png",
       sourceCode: "https://github.com/Preetirajdhami/artPortfolio",
       liveDemo: "https://project3.demo",
@@ -38,7 +38,7 @@ const ProjectSection = () => {
     },
     {
       id: 4,
-      title: "Project 4",
+      title: "Makalu Everest Hospital",
       image: "/images/project4.jpg",
       sourceCode: "https://gridify-henna.vercel.app",
       liveDemo: "https://project4.demo",
@@ -46,12 +46,29 @@ const ProjectSection = () => {
     },
     {
       id: 5,
-      title: "Project 5",
+      title: "Gridify",
       image: "/images/project5.jpg",
       sourceCode: "https://github.com/Preetirajdhami/project5",
       liveDemo: "https://project5.demo",
       description: "Description of project 5",
     },
+    {
+      id: 6,
+      title: "TripNest",
+      image: "/images/project5.jpg",
+      sourceCode: "https://github.com/Preetirajdhami/project5",
+      liveDemo: "https://project5.demo",
+      description: "Description of project 5",
+    },
+    {
+      id: 7,
+      title: "Purwanchal School",
+      image: "/images/project5.jpg",
+      sourceCode: "https://github.com/Preetirajdhami/project5",
+      liveDemo: "https://project5.demo",
+      description: "Description of project 5",
+    },
+    
   ];
 
   const containerVariants = {
