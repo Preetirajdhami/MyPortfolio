@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
+import Image from "next/image";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 
 const ProjectsPage = () => {
@@ -13,131 +14,281 @@ const ProjectsPage = () => {
       title: "Blockchain Voting System",
       image: "/images/quickVoteImg.png",
       sourceCode: "https://github.com/Preetirajdhami/BlockchainVoting",
-      liveDemo: "https://blockchain-voting-system.demo",
-      description: "A secure voting system using blockchain technology",
+      liveDemo: "https://quickvote-beta.vercel.app/",
+      tags: ["React", "Blockchain", "Node.js", "MongoDB", "Web3"],
+      featured: true
     },
     {
       id: 2,
       title: "BlueFoxHoster",
       image: "/images/BluefoxhosterImg.png",
       sourceCode: "https://github.com/Preetirajdhami/bluefoxHoster",
-      liveDemo: "https://quickvote-beta.vercel.app/",
-      description: "A web hosting platform with user-friendly interface",
+      liveDemo: "https://bluefoxhoster.vercel.app/",
+      tags: ["Next.js", "Tailwind CSS", "MongoDB", "TypeScript", "API"],
+      featured: true
     },
     {
       id: 3,
-      title: "Project 3",
+      title: "Preeti Arts",
       image: "/images/preetiarts.png",
-      sourceCode: "https://github.com/Preetirajdhami/project3",
+      sourceCode: "https://github.com/Preetirajdhami/artPortfolio",
       liveDemo: "https://project3.demo",
-      description: "Description of project 3",
+      tags: ["React", "CSS3", "JavaScript", "Framer Motion", "Gallery"],
+      featured: true
     },
     {
       id: 4,
-      title: "Project 4",
+      title: "Makalu Everest Hospital",
       image: "/images/project4.jpg",
-      sourceCode: "https://github.com/Preetirajdhami/project4",
+      sourceCode: "https://gridify-henna.vercel.app",
       liveDemo: "https://project4.demo",
-      description: "Description of project 4",
+      tags: ["Next.js", "Database", "Healthcare", "Management", "Responsive"],
+      featured: false
     },
     {
       id: 5,
-      title: "Project 5",
+      title: "Gridify",
       image: "/images/project5.jpg",
       sourceCode: "https://github.com/Preetirajdhami/project5",
       liveDemo: "https://project5.demo",
-      description: "Description of project 5",
+      tags: ["CSS Grid", "JavaScript", "Responsive", "UI/UX", "Framework"],
+      featured: false
+    },
+    {
+      id: 6,
+      title: "TripNest",
+      image: "/images/project5.jpg",
+      sourceCode: "https://github.com/Preetirajdhami/project5",
+      liveDemo: "https://project5.demo",
+      tags: ["React", "Travel", "API Integration", "Booking", "Maps"],
+      featured: false
+    },
+    {
+      id: 7,
+      title: "Purwanchal School",
+      image: "/images/project5.jpg",
+      sourceCode: "https://github.com/Preetirajdhami/project5",
+      liveDemo: "https://project5.demo",
+      tags: ["Education", "Management", "Database", "Dashboard", "Portal"],
+      featured: false
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 15,
-      },
-    },
-  };
+  const featuredProjects = projects.filter(project => project.featured);
+  const otherProjects = projects.filter(project => !project.featured);
 
   return (
-   <div>
-    <Navbar />
-     <div className="py-16 px-8 xl:px-40 bg-base">
+    <div className="min-h-screen bg-gradient-to-br from-base to-orange-50">
+      <Navbar />
       
-      <motion.h2
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-center text-primary mb-12"
-      >
-        All Projects
-      </motion.h2>
-
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6"
-      >
-        {projects.map((project) => (
+      {/* Hero Section with Featured Projects */}
+      <section className="pt-32 pb-8 px-8 xl:px-40 relative overflow-hidden">
+        {/* Background blur elements */}
+        <div className="hidden md:block absolute top-10 right-[-4rem] w-96 h-96 bg-primary rounded-full blur-[150px] opacity-20 z-0" />
+        <div className="hidden md:block absolute bottom-[-2rem] left-[-4rem] w-72 h-72 bg-orange-300 rounded-full blur-[120px] opacity-20 z-0" />
+        
+        <div className="relative z-10">
           <motion.div
-            key={project.id}
-            variants={itemVariants}
-            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="text-center mb-12"
           >
-            <div className="rounded-lg">
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={500}
-                height={208}
-                className="w-full p-5 h-52 transition-transform duration-300 ease-in-out hover:scale-105 object-cover"
-              />
-            </div>
-            <div className="pb-4 px-4">
-              <h3 className="text-xl font-semibold text-textColor mb-2">
-                {project.title}
-              </h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <div className="flex flex-row gap-2">
-                <a
-                  href={project.sourceCode}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex mt-2 w-auto gap-1 bg-primary text-white px-2 py-2 rounded-md hover:bg-ButtonC transition-colors duration-200"
-                >
-                  <FaGithub className="text-xl" />
-                  <span>Source Code</span>
-                </a>
-                <a
-                  href={project.liveDemo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex mt-2 w-auto gap-2 bg-primary text-white px-4 py-2 rounded-md hover:bg-ButtonC transition-colors duration-200"
-                >
-                  <span>Visit Website</span>
-                </a>
-              </div>
-            </div>
+            <Link href="/" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6">
+              <FaArrowLeft />
+              <span>Back to Home</span>
+            </Link>
+            <h1 className="text-4xl md:text-5xl font-bold text-textColor mb-4">
+              All <span className="text-primary">Projects</span>
+            </h1>
+            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           </motion.div>
-        ))}
-      </motion.div>
+
+          {/* Featured Projects Section - Moved inside hero */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            className="mb-8"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-primary mb-6">
+              Featured Projects
+            </h2>
+            <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+            {featuredProjects.map((project, index) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}
+                className="bg-white/90 backdrop-blur-sm shadow-xl rounded-2xl overflow-hidden"
+              >
+                <div className="relative overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={600}
+                    height={320}
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      Featured
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-textColor mb-4">{project.title}</h3>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tags.slice(0, 3).map((tag) => (
+                      <span
+                        key={tag}
+                        className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex gap-3">
+                    <a
+                      href={project.sourceCode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 font-semibold text-sm"
+                    >
+                      <FaGithub />
+                      <span>Code</span>
+                    </a>
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 border-2 border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition-all duration-200 font-semibold text-sm"
+                    >
+                      <FaExternalLinkAlt />
+                      <span>Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Other Projects Section */}
+      <section className="py-16 px-8 xl:px-40 relative">
+        <div className="hidden md:block absolute top-1/2 left-0 w-64 h-64 bg-primary rounded-full blur-[100px] opacity-10 z-0" />
+        
+        <div className="relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-primary mb-6">
+              Other Projects
+            </h2>
+            <div className="w-16 h-1 bg-primary mx-auto mb-8"></div>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+            {otherProjects.map((project) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white/90 backdrop-blur-sm shadow-lg rounded-2xl overflow-hidden"
+              >
+                <div className="relative overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={400}
+                    height={240}
+                    className="w-full h-56 object-cover"
+                  />
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-textColor mb-4">{project.title}</h3>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.slice(0, 3).map((tag) => (
+                      <span
+                        key={tag}
+                        className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                    {project.tags.length > 3 && (
+                      <span className="text-gray-500 text-xs px-2 py-1">
+                        +{project.tags.length - 3} more
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex gap-3">
+                    <a
+                      href={project.sourceCode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200 text-sm font-semibold"
+                    >
+                      <FaGithub />
+                      <span>Code</span>
+                    </a>
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 border-2 border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition-all duration-200 text-sm font-semibold"
+                    >
+                      <FaExternalLinkAlt />
+                      <span>Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16 px-8 xl:px-40 text-center relative">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-r from-primary to-orange-500 text-white p-12 rounded-2xl relative z-10"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Let's Build Something Amazing Together
+          </h2>
+          <p className="text-xl mb-8 opacity-90">
+            Have a project in mind? Let's discuss how we can bring your ideas to life.
+          </p>
+          <button 
+            className="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg"
+            onClick={() => {
+              // Navigate to home page and scroll to contact section
+              window.location.href = "/#contact";
+            }}
+          >
+            Get In Touch
+          </button>
+        </motion.div>
+      </section>
     </div>
-   </div>
   );
 };
 
