@@ -128,13 +128,6 @@ const Contact = () => {
     }
   ];
 
-  const stats = [
-    { number: "15+", label: "Projects" },
-    { number: "2+", label: "Years Experience" },
-    { number: "10+", label: "Technologies" },
-    { number: "24/7", label: "Available" }
-  ];
-
   return (
     <section id="contact" className="relative py-20 overflow-hidden bg-gradient-to-br from-bgTheme to-orange-50">
       {/* Enhanced Background blur elements */}
@@ -152,7 +145,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Contact</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <h3 className="text-2xl font-semibold text-textColor mb-6">
-            Let's Work Together
+            Let&apos;s Work Together
           </h3>
         </motion.div>
 
@@ -178,7 +171,7 @@ const Contact = () => {
                   <FaCheckCircle className="text-green-600 text-xl" />
                   <div>
                     <p className="text-green-800 font-semibold">Message sent successfully!</p>
-                    <p className="text-green-600 text-sm">Thank you for reaching out. I'll get back to you soon.</p>
+                    <p className="text-green-600 text-sm">Thank you for reaching out. I&apos;ll get back to you soon.</p>
                   </div>
                 </motion.div>
               )}
