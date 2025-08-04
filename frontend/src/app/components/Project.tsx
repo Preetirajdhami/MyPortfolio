@@ -15,7 +15,7 @@ const ProjectSection = () => {
       title: "Blockchain Voting System",
       image: "/images/quickVoteImg.png",
       sourceCode: "https://github.com/Preetirajdhami/BlockchainVoting",
-      liveDemo: "https://quickvote-beta.vercel.app/",
+      liveDemo: "https://quickvote-blockchain.vercel.app/",
       tags: ["React", "Blockchain", "Node.js", "MongoDB"]
     },
     {
@@ -31,7 +31,7 @@ const ProjectSection = () => {
       title: "Preeti Arts",
       image: "/images/preetiarts.png",
       sourceCode: "https://github.com/Preetirajdhami/artPortfolio",
-      liveDemo: "https://project3.demo",
+      liveDemo: "https://preetiarts.vercel.app/",
       tags: ["React", "CSS3", "JavaScript", "Framer Motion"]
     },
     {

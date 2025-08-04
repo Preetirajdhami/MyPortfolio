@@ -32,7 +32,7 @@ const ProjectsPage = () => {
       title: "Preeti Arts",
       image: "/images/preetiarts.png",
       sourceCode: "https://github.com/Preetirajdhami/artPortfolio",
-      liveDemo: "https://project3.demo",
+      liveDemo: "https://preetiarts.vercel.app/",
       tags: ["React", "CSS3", "JavaScript", "Framer Motion", "Gallery"],
       featured: true
     },
