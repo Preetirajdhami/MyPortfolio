@@ -152,7 +152,7 @@ const Navbar = () => {
                 {/* Mobile menu decoration */}
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="h-px bg-gradient-to-r from-primary to-transparent"></div>
-                  <p className="text-sm text-gray-600 mt-4">Let's build something amazing together</p>
+                  <p className="text-sm text-gray-600 mt-4">Let&apos;s build something amazing together</p>
                 </div>
               </motion.nav>
             )}

@@ -272,10 +272,10 @@ const ProjectsPage = () => {
           className="bg-gradient-to-r from-primary to-orange-500 text-white p-12 rounded-2xl relative z-10"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Build Something Amazing Together
+            Let&apos;s Build Something Amazing Together
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Have a project in mind? Let's discuss how we can bring your ideas to life.
+            Have a project in mind? Let&apos;s discuss how we can bring your ideas to life.
           </p>
           <button 
             className="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg"
