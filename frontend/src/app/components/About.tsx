@@ -209,8 +209,6 @@ const About = () => {
                     </div>
                   </div>
 
-                  {/* Mobile Timeline Dot */}
-                  <div className="md:hidden w-4 h-4 bg-primary rounded-full my-4"></div>
                 </motion.div>
               ))}
             </div>
