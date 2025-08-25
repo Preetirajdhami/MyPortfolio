@@ -13,31 +13,32 @@ const ProjectSection = () => {
     {
       id: 1,
       title: "Blockchain Voting System",
-      image: "/images/quickVoteImg.png",
+      image: "/images/quickVote.png",
       sourceCode: "https://github.com/Preetirajdhami/BlockchainVoting",
       liveDemo: "https://quickvote-blockchain.vercel.app/",
-      tags: ["React", "Blockchain", "Node.js", "MongoDB"]
+      tags: ["React", "Solidity", "Node.js", "MongoDB"]
     },
     {
       id: 2,
-      title: "BlueFoxHoster",
-      image: "/images/BluefoxhosterImg.png",
-      sourceCode: "https://github.com/Preetirajdhami/bluefoxHoster",
-      liveDemo: "https://bluefoxhoster.vercel.app/",
-      tags: ["Next.js", "Tailwind", "MongoDB", "TypeScript"]
+      title: "TripNest",
+      image: "/images/tripnest.png",
+      sourceCode: "https://github.com/ManojScripts-dot/TripNest",
+      liveDemo: "https://project5.demo",
+      tags: ["React", "Travel", "API Integration"]
     },
+    
     {
       id: 3,
       title: "Preeti Arts",
-      image: "/images/preetiarts.png",
+      image: "/images/arts.png",
       sourceCode: "https://github.com/Preetirajdhami/artPortfolio",
       liveDemo: "https://preetiarts.vercel.app/",
-      tags: ["React", "CSS3", "JavaScript", "Framer Motion"]
+      tags: ["Next.js", "Tailwind", "Node.js", "Framer Motion"]
     },
     {
       id: 4,
       title: "Makalu Everest Hospital",
-      image: "/images/project4.jpg",
+      image: "/images/makalu.png",
       sourceCode: "https://gridify-henna.vercel.app",
       liveDemo: "https://project4.demo",
       tags: ["Next.js", "Database", "Healthcare"]
@@ -45,27 +46,21 @@ const ProjectSection = () => {
     {
       id: 5,
       title: "Gridify",
-      image: "/images/project5.jpg",
-      sourceCode: "https://github.com/Preetirajdhami/project5",
+      image: "/images/gridify.png",
+      sourceCode: "https://github.com/Preetirajdhami/GridMaker",
       liveDemo: "https://project5.demo",
       tags: ["CSS Grid", "JavaScript", "Responsive"]
     },
     {
       id: 6,
-      title: "TripNest",
-      image: "/images/project5.jpg",
-      sourceCode: "https://github.com/Preetirajdhami/project5",
-      liveDemo: "https://project5.demo",
-      tags: ["React", "Travel", "API Integration"]
+      title: "BlueFoxHoster",
+      image: "/images/bluefox.png",
+      sourceCode: "https://github.com/Preetirajdhami/bluefoxHoster",
+      liveDemo: "https://bluefoxhoster.vercel.app/",
+      tags: ["Next.js", "Tailwind", "TypeScript"]
     },
-    {
-      id: 7,
-      title: "Purwanchal School",
-      image: "/images/project5.jpg",
-      sourceCode: "https://github.com/Preetirajdhami/project5",
-      liveDemo: "https://project5.demo",
-      tags: ["Education", "Management", "Database"]
-    },
+    
+    
   ];
 
   const slideNext = () => {
@@ -118,7 +113,7 @@ const ProjectSection = () => {
                       alt={project.title}
                       width={500}
                       height={280}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-64  object-cover"
                     />
                   </div>
                   

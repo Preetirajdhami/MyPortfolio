@@ -14,7 +14,8 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <div className="animate-fadeIn space-y-6">
             <h1 className="text-4xl font-display md:text-6xl font-bold text-textColor mb-4 leading-tight">
-              Hi, I&apos;m <span className="text-primary font-bold">Preeti</span>
+              Hi, I&apos;m{" "}
+              <span className="text-primary font-bold">Preeti</span>
             </h1>
             <p className="text-xl text-textColor mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               I&apos;m a <span className="font-bold">Full-Stack Developer</span>{" "}
@@ -45,7 +46,7 @@ const Hero = () => {
                 </svg>
               </a>
               <a
-                href="https://drive.google.com/file/d/1_TyPzoeiQBYT-XwJmiPvPjC0B7D8tFiM/view?usp=sharing"
+                href="https://drive.google.com/file/d/1GqvRuiHX0n6rC8oOK-m2ilf1r92Jbfxy/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center text-lg border-2 border-primary py-3 px-8 text-textColor font-bold rounded-lg transition-all duration-300 hover:shadow-lg hover:transform hover:-translate-y-1 gap-2"
