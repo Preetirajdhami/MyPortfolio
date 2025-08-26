@@ -39,8 +39,8 @@ const ProjectSection = () => {
       id: 4,
       title: "Makalu Everest Hospital",
       image: "/images/makalu.png",
-      sourceCode: "https://gridify-henna.vercel.app",
-      liveDemo: "https://project4.demo",
+      sourceCode: "",
+      liveDemo: "https://stocknep.com/o",
       tags: ["Next.js", "Database", "Healthcare"]
     },
     {
@@ -48,7 +48,7 @@ const ProjectSection = () => {
       title: "Gridify",
       image: "/images/gridify.png",
       sourceCode: "https://github.com/Preetirajdhami/GridMaker",
-      liveDemo: "https://project5.demo",
+      liveDemo: "https://gridify-henna.vercel.app",
       tags: ["CSS Grid", "JavaScript", "Responsive"]
     },
     {

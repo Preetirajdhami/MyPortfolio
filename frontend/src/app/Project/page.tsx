@@ -14,7 +14,7 @@ const ProjectsPage = () => {
       title: "Blockchain Voting System",
       image: "/images/quickVote.png",
       sourceCode: "https://github.com/Preetirajdhami/BlockchainVoting",
-      liveDemo: "https://quickvote-beta.vercel.app/",
+      liveDemo: "https://quickvote-blockchain.vercel.app/",
       tags: ["React", "Blockchain", "Node.js", "MongoDB", "Web3"],
       featured: true
     },
@@ -39,9 +39,9 @@ const ProjectsPage = () => {
     {
       id: 4,
       title: "Makalu Everest Hospital",
-      image: "/images/project4.jpg",
-      sourceCode: "https://gridify-henna.vercel.app",
-      liveDemo: "https://project4.demo",
+      image: "/images/makalu.png",
+      
+      liveDemo: "https://stocknep.com/",
       tags: ["Next.js", "Database", "Healthcare", "Management", "Responsive"],
       featured: false
     },
@@ -49,18 +49,18 @@ const ProjectsPage = () => {
       id: 5,
       title: "Gridify",
       image: "/images/gridify.png",
-      sourceCode: "https://github.com/Preetirajdhami/project5",
-      liveDemo: "https://project5.demo",
-      tags: ["CSS Grid", "JavaScript", "Responsive", "UI/UX", "Framework"],
+      sourceCode: "https://github.com/Preetirajdhami/GridMaker",
+      liveDemo: "https://gridify-henna.vercel.app",
+      tags: ["CSS Grid", "JavaScript", "Next.js"],
       featured: false
     },
     {
       id: 6,
       title: "TripNest",
-      image: "/images/project5.jpg",
-      sourceCode: "https://github.com/Preetirajdhami/project5",
+      image: "/images/tripnest.png",
+      sourceCode: "https://github.com/ManojScripts-dot/TripNest",
       liveDemo: "https://project5.demo",
-      tags: ["React", "Travel", "API Integration", "Booking", "Maps"],
+      tags: ["dotnet", "mysql"],
       featured: false
     },
     {
@@ -69,7 +69,7 @@ const ProjectsPage = () => {
       image: "/images/project5.jpg",
       sourceCode: "https://github.com/Preetirajdhami/project5",
       liveDemo: "https://project5.demo",
-      tags: ["Education", "Management", "Database", "Dashboard", "Portal"],
+      tags: [ "Tailwind", "React", "Dashboard", ],
       featured: false
     },
   ];
