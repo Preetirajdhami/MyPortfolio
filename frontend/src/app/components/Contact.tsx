@@ -64,7 +64,7 @@ const Contact = () => {
       setSubmitStatus('success');
       setFormData({ name: "", email: "", message: "" });
       
-      // Auto-hide success message after 5 seconds
+      
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
@@ -73,7 +73,6 @@ const Contact = () => {
       console.error("Failed to send email:", error);
       setSubmitStatus('error');
       
-      // Auto-hide error message after 5 seconds
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
@@ -101,29 +100,29 @@ const Contact = () => {
     {
       icon: <FaFacebook className="text-xl" />,
       href: "https://www.facebook.com/profile.php?id=100075831461504",
-      color: "hover:bg-blue-600",
-      bgColor: "bg-blue-500",
+      color: "hover:bg-primary/90",
+      bgColor: "bg-primary",
       label: "Facebook"
     },
     {
       icon: <FaInstagram className="text-xl" />,
       href: "https://www.instagram.com/pre.ettiii/",
-      color: "hover:bg-pink-600",
-      bgColor: "bg-pink-500",
+      color: "hover:bg-primary/90",
+      bgColor: "bg-primary",
       label: "Instagram"
     },
     {
       icon: <FaGithub className="text-xl" />,
       href: "https://github.com/Preetirajdhami",
-      color: "hover:bg-gray-700",
-      bgColor: "bg-gray-800",
+      color: "hover:bg-primary/90",
+      bgColor: "bg-primary",
       label: "GitHub"
     },
     {
       icon: <FaLinkedin className="text-xl" />,
       href: "https://www.linkedin.com/in/preeti-rajdhami-103803244/",
-      color: "hover:bg-blue-700",
-      bgColor: "bg-blue-600",
+      color: "hover:bg-primary/90",
+      bgColor: "bg-primary",
       label: "LinkedIn"
     }
   ];
