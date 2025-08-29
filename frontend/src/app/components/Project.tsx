@@ -23,7 +23,7 @@ const ProjectSection = () => {
       title: "TripNest",
       image: "/images/tripnest.png",
       sourceCode: "https://github.com/ManojScripts-dot/TripNest",
-      liveDemo: "https://project5.demo",
+      liveDemo: "https://tripnest-r14u.onrender.com/",
       tags: ["React", "Travel", "API Integration"]
     },
     

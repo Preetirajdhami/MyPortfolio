@@ -129,7 +129,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="relative py-20 overflow-hidden bg-gradient-to-br from-bgTheme to-orange-50">
-      {/* Enhanced Background blur elements */}
+      
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary rounded-full blur-[150px] opacity-20 z-0" />
       <div className="absolute bottom-20 left-0 w-72 h-72 bg-orange-300 rounded-full blur-[120px] opacity-20 z-0" />
       
@@ -149,7 +149,7 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Enhanced Contact Form */}
+         
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -277,7 +277,7 @@ const Contact = () => {
             </form>
           </motion.div>
 
-          {/* Enhanced Contact Info Section */}
+          
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -347,7 +347,7 @@ const Contact = () => {
           </motion.div>
         </div>
 
-        {/* Enhanced Footer */}
+        
         <motion.div
           className="mt-20 pt-8 border-t border-primary/20 text-center"
           initial={{ opacity: 0, y: 20 }}

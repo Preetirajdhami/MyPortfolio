@@ -59,7 +59,7 @@ const ProjectsPage = () => {
       title: "TripNest",
       image: "/images/tripnest.png",
       sourceCode: "https://github.com/ManojScripts-dot/TripNest",
-      liveDemo: "https://project5.demo",
+      liveDemo: "https://tripnest-r14u.onrender.com/",
       tags: ["dotnet", "mysql"],
       featured: false
     },
