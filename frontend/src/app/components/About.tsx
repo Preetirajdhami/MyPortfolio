@@ -107,7 +107,7 @@ const About = () => {
       id="about"
       className="relative overflow-hidden bg-gradient-to-br from-bgTheme to-orange-50"
     >
-      {/* Enhanced Blurred Gradient Circles */}
+    
       <div className="hidden md:block absolute top-[-4rem] right-[-4rem] w-96 h-96 bg-primary rounded-full blur-[150px] opacity-20 z-0" />
       <div className="hidden md:block absolute bottom-[-4rem] left-[-4rem] w-72 h-72 bg-primary rounded-full blur-[120px] opacity-20 z-0" />
       <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-orange-300 rounded-full blur-[100px] opacity-10 z-0" />
@@ -248,10 +248,10 @@ const About = () => {
                     exp.side === "right" ? "md:flex-row-reverse" : ""
                   }`}
                 >
-                  {/* Timeline Dot */}
+                
                   <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
 
-                  {/* Content Card */}
+                 
                   <div
                     className={`w-full md:w-5/12 ${
                       exp.side === "right" ? "md:mr-auto" : "md:ml-auto"
@@ -283,7 +283,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
+     
       <section className="py-16 px-8 relative z-10">
         <div className="max-w-6xl mx-auto text-center">
           <motion.div
