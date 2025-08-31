@@ -280,7 +280,7 @@ const ProjectsPage = () => {
           <button 
             className="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg"
             onClick={() => {
-              // Navigate to home page and scroll to contact section
+              
               window.location.href = "/#contact";
             }}
           >
