@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Overlay */}
+      
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-40 z-20 md:hidden"
@@ -56,7 +56,7 @@ const Navbar = () => {
         transition={{ duration: 0.6 }}
       >
         <div className="responsive-padding mx-auto flex items-center justify-between py-5 relative">
-          {/* Hamburger Button */}
+          
           <div className="md:hidden flex-shrink-0 text-textColor">
             <motion.button 
               onClick={toggleDropdown} 
